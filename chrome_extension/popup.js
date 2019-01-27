@@ -65,7 +65,6 @@ var bp_port = chrome.extension.connect({
         }
 
         if (request.data.subject == "convert" && request.data.content == "success") {
-            alert(request.data.file_data);
             $("#origin-img").attr("src", "data:image/jpg;base64, " + request.data.file_data);
         }
     }
