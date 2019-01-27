@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  
+</head>
+
+<body>
+  <div class="pages">
+        <div class="page login-page">
+            <div class="form">
+                <img src="images/HackFace_Logo_48x48.png" id="logo">
+                <form class="register-form">
+                    <input class="name" type="text" placeholder="name"/>
+                    <input class="password" type="password" placeholder="password"/>
+                    <input class="email" type="text" placeholder="email address"/>
+                    <p>Your Video:</p>
+                    <input class="video" type="file" placeholder="your video"/>
+                    <p class="error-msg">Incorrect information!</p>
+                    <button>create</button>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form>
+                <form class="login-form">
+                    <input class="username" type="text" placeholder="username"/>
+                    <input class="password" type="password" placeholder="password"/>
+                    <p class="error-msg">Username or password incorrect!</p>
+                    <button>login</button>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="page generate-page">
+            <p><img src="" id="origin-img" width="360"/></p>
+            <form>
+                <button>Convert</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="js.cookie.js"></script>
+    <script src="JSONP-min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
